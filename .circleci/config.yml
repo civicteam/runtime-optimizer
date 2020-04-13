@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   orb-tools: circleci/orb-tools@6.0.0
-  runtime-optimizer: rckeller/runtime-optimizer@dev:alpha
+  runtime-optimizer: civicteam/runtime-optimizer@dev:alpha
   # Ensure CIRCLE_COMPARE_URL exists - recommended peer dependency
   compare-url: iynere/compare-url@1.0.0
 
@@ -37,7 +37,7 @@ workflows:
             - orb-tools/lint
       # release dev version of orb, for testing & possible publishing
       - orb-tools/publish-dev:
-          orb-name: rckeller/runtime-optimizer
+          orb-name: civicteam/runtime-optimizer
           requires:
             - orb-tools/pack
 
@@ -47,7 +47,7 @@ workflows:
       # # key in CircleCI via SSH Permissions, with github.com as Hostname)
       - orb-tools/trigger-integration-workflow:
           name: trigger-integration-dev
-          ssh-fingerprints: a9:88:12:91:d0:a9:2f:e2:96:91:b1:1d:e7:3c:4c:eb
+          ssh-fingerprints: d4:2f:1d:14:cf:89:db:d2:0e:ab:91:cf:06:eb:fb:e9
           requires:
             - orb-tools/publish-dev
           filters:
@@ -58,7 +58,7 @@ workflows:
       # # the 2nd job (below) may also publish a production orb version
       - orb-tools/trigger-integration-workflow:
           name: trigger-integration-master
-          ssh-fingerprints: a9:88:12:91:d0:a9:2f:e2:96:91:b1:1d:e7:3c:4c:eb
+          ssh-fingerprints: d4:2f:1d:14:cf:89:db:d2:0e:ab:91:cf:06:eb:fb:e9
           tag: master
           requires:
             - orb-tools/publish-dev
