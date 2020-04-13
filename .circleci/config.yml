@@ -102,7 +102,7 @@ workflows:
       - orb-tools/dev-promote-prod:
           name: dev-promote-minor
           release: minor
-          orb-name: rckeller/runtime-optimizer
+          orb-name: civicteam/runtime-optimizer
           requires:
             - integration-tests-master
           filters:
@@ -113,7 +113,7 @@ workflows:
       - orb-tools/dev-promote-prod:
           name: dev-promote-major
           release: major
-          orb-name: rckeller/runtime-optimizer
+          orb-name: civicteam/runtime-optimizer
           requires:
             - integration-tests-master
           filters:
