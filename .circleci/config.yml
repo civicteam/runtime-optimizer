@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   orb-tools: circleci/orb-tools@6.0.0
-  runtime-optimizer: rckeller/runtime-optimizer@dev:alpha
+  runtime-optimizer: rckeller/runtime-optimizer@4.0.0
   # Ensure CIRCLE_COMPARE_URL exists - recommended peer dependency
   compare-url: iynere/compare-url@1.0.0
 
