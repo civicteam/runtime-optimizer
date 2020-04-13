@@ -1,8 +1,10 @@
 # CircleCI Runtime Optimizer
-[![CircleCI Status](https://circleci.com/gh/RcKeller/runtime-optimizer/tree/master.svg?style=svg)](https://circleci.com/gh/RcKeller/runtime-optimizer/tree/master)
-[![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/rckeller/runtime-optimizer)](https://circleci.com/orbs/registry/orb/rckeller/runtime-optimizer)
+[![CircleCI Status](https://circleci.com/gh/civicteam/runtime-optimizer/tree/master.svg?style=svg)](https://circleci.com/gh/civicteam/runtime-optimizer/tree/master)
+[![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/civicteam/runtime-optimizer)](https://circleci.com/orbs/registry/orb/civicteam/runtime-optimizer)
 
-`rckeller/runtime-optimizer` is a collection of CircleCI commands used to improve the runtime and efficiency of CI runs. This orb handles complex optimizations such as caching and static analysis of commit histories under the hood, keeping your jobs simple and effective. CircleCI bills based on runtime, making these commands incredibly useful for keeping costs down.
+FORK of [rckeller/runtime-optimizer](https://circleci.com/orbs/registry/orb/rckeller/runtime-optimizer)
+
+`civicteam/runtime-optimizer` is a collection of CircleCI commands used to improve the runtime and efficiency of CI runs. This orb handles complex optimizations such as caching and static analysis of commit histories under the hood, keeping your jobs simple and effective. CircleCI bills based on runtime, making these commands incredibly useful for keeping costs down.
 
 ## Commands
 
